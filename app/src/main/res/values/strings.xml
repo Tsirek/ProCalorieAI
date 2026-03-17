@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProCalorieAI</string>
+    <string name="tagline">Искусственный интеллект для\nподсчета калорий по фотографии</string>
+    <string name="chip_ai">🤖 AI распознавание</string>
+    <string name="chip_instant">⚡ Мгновенно</string>
+    <string name="chip_stats">📊 Статистика</string>
+    <string name="btn_continue">Продолжить →</string>
+    <string name="already_have_account">Уже есть аккаунт? </string>
+    <string name="login">Войти</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="sign_in_title">Вход</string>
+    <string name="sign_in_subtitle">Войдите, чтобы продолжить отслеживание</string>
+    <string name="email_label">Email</string>
+    <string name="email_hint">anna@example.com</string>
+    <string name="password_label">Пароль</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="btn_login">Войти</string>
+    <string name="or_divider">или</string>
+    <string name="btn_google_login">Войти через Google</string>
+    <string name="no_account">Нет аккаунта? </string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="register_title">Регистрация</string>
+    <string name="register_subtitle">Начните свой путь к здоровью</string>
+    <string name="name_label">Ваше имя</string>
+    <string name="name_hint">Анна</string>
+    <string name="password_register_hint">Минимум 6 символов</string>
+    <string name="btn_register">Создать аккаунт</string>
+    <string name="btn_google_register">Продолжить с Google</string>
+</resources>
