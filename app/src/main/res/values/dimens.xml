@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_screen">24dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="corner_radius_button">12dp</dimen>
+    <dimen name="corner_radius_input">10dp</dimen>
+    <dimen name="corner_radius_chip">50dp</dimen>
+    <dimen name="input_height">52dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+</resources>
