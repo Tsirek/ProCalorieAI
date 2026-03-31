@@ -15,4 +15,20 @@
     <color name="border_color">#E5E7EB</color>
     <color name="chip_bg">#33FFFFFF</color>
     <color name="black_10">#1A000000</color>
+
+    <color name="text_dark">#1A1A2E</color>
+    <color name="progress_bg">#E5E7EB</color>
+
+    <color name="onboarding_green">#22C55E</color>
+    <color name="onboarding_green_light">#DCFCE7</color>
+
+    <color name="onboarding_blue">#3B82F6</color>
+    <color name="onboarding_blue_light">#DBEAFE</color>
+
+    <color name="onboarding_purple">#8B5CF6</color>
+    <color name="onboarding_purple_light">#EDE9FE</color>
+
+    <color name="onboarding_orange">#F97316</color>
+    <color name="onboarding_orange_light">#FEF3C7</color>
+
 </resources>

@@ -302,7 +302,8 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:focusable="true" />
+                android:focusable="true"
+                android:layout_marginStart="6dp"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

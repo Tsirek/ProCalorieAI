@@ -28,14 +28,6 @@
 
     </FrameLayout>
 
-    <!-- Заголовок -->
-
-    <!-- Подзаголовок -->
-
-    <!-- Чипы -->
-
-    <!-- Кнопка Продолжить -->
-
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
@@ -110,12 +102,13 @@
     </LinearLayout>
 
     <!-- Футер -->
+
     <Button
         android:id="@+id/btn_continue"
         android:layout_width="0dp"
         android:layout_height="54dp"
         android:layout_marginHorizontal="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/bg_button_white"
         android:elevation="4dp"
         android:text="@string/btn_continue"
@@ -149,12 +142,13 @@
             android:id="@+id/tv_login_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:clickable="true"
+            android:focusable="true"
             android:text="@string/login"
             android:textColor="@color/white"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:focusable="true" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
