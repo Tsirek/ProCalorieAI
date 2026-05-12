@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/bottom_sheet_manual_input.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Ручка -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dot_inactive" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить блюдо вручную"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <!-- Название -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Название блюда *"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <EditText
+            android:id="@+id/etMealName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:hint="Например: Куриная грудка с рисом"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="14dp"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+        <!-- Калории -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Калории (ккал) *"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <EditText
+            android:id="@+id/etCalories"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:hint="0"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="14dp"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <!-- БЖУ в одну строку -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="БЖУ (граммы, необязательно)"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Белки" android:textColor="@color/onboarding_blue" android:textSize="12sp" android:textStyle="bold"/>
+                <EditText android:id="@+id/etProtein" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="4dp" android:hint="0" android:textSize="14sp" android:textColor="@color/text_dark" android:background="@drawable/bg_input_field" android:paddingHorizontal="10dp" android:inputType="numberDecimal" android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginHorizontal="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Углеводы" android:textColor="@color/onboarding_orange" android:textSize="12sp" android:textStyle="bold"/>
+                <EditText android:id="@+id/etCarbs" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="4dp" android:hint="0" android:textSize="14sp" android:textColor="@color/text_dark" android:background="@drawable/bg_input_field" android:paddingHorizontal="10dp" android:inputType="numberDecimal" android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Жиры" android:textColor="@color/onboarding_purple" android:textSize="12sp" android:textStyle="bold"/>
+                <EditText android:id="@+id/etFat" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="4dp" android:hint="0" android:textSize="14sp" android:textColor="@color/text_dark" android:background="@drawable/bg_input_field" android:paddingHorizontal="10dp" android:inputType="numberDecimal" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Тип приёма пищи -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Тип приёма пищи"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark" />
+
+        <Spinner
+            android:id="@+id/spinnerMealType"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="14dp" />
+
+        <!-- Кнопка сохранить -->
+        <Button
+            android:id="@+id/btnSaveManual"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="Добавить и подтвердить"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_green_rounded"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+</ScrollView>

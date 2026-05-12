@@ -1,0 +1,12 @@
+mutation SetGoal($input: GoalInput!) {
+  upsertGoal(input: $input) {
+    id
+    goalType
+    targetKg
+    currentWeightKg
+    dailyCalories
+    progressPercent
+    totalCalorieDeficit
+    createdAt
+  }
+}

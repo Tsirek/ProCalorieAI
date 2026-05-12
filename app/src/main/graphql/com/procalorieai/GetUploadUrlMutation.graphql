@@ -1,0 +1,8 @@
+mutation GetUploadUrl {
+  requestPhotoUpload {
+    requestId
+    uploadUrl
+    s3Key
+    expiresIn
+  }
+}

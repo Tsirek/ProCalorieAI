@@ -1,0 +1,7 @@
+# ConfirmPhotoUploadMutation.graphql — новый файл
+mutation ConfirmPhotoUpload($requestId: Int!) {
+  confirmPhotoUpload(requestId: $requestId) {
+    requestId
+    status
+  }
+}

@@ -1,0 +1,7 @@
+# app/src/main/graphql/com/procalorieai/RefreshTokensMutation.graphql
+mutation RefreshTokens($input: RefreshInput!) {
+  refreshTokens(input: $input) {
+    accessToken
+    refreshToken
+  }
+}

@@ -1,0 +1,14 @@
+mutation AddMeal($input: AddMealLogInput!) {
+  addMealLog(input: $input) {
+    id
+    name
+    mealType
+    eatenAt
+    nutrition {
+      calories
+      protein
+      carbs
+      fat
+    }
+  }
+}

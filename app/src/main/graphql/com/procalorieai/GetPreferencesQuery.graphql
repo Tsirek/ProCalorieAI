@@ -1,0 +1,8 @@
+query GetPreferences {
+  preferences {
+    dietType
+    mealsPerDay
+    waterGoalMl
+    notificationsEnabled
+  }
+}

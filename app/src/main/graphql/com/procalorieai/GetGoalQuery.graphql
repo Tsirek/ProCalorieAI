@@ -1,0 +1,12 @@
+query GetGoal {
+  goal {
+    id
+    goalType
+    targetKg
+    currentWeightKg
+    dailyCalories
+    progressPercent
+    totalCalorieDeficit
+    createdAt
+  }
+}

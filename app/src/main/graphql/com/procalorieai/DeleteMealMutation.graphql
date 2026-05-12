@@ -1,0 +1,4 @@
+# DeleteMealMutation.graphql
+mutation DeleteMeal($id: Int!) {
+  deleteMealLog(id: $id)
+}

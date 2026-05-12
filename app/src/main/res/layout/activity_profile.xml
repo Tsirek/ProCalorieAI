@@ -26,16 +26,25 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:paddingTop="16dp"
-                android:paddingBottom="20dp">
+                android:paddingBottom="20dp"
+                android:gravity="center_vertical">
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="28sp"-->
+<!--                    android:layout_height="30sp"-->
+<!--                    android:background="@drawable/zvezda"-->
+<!--                    android:textSize="20sp"-->
+<!--                    />-->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="✦ ProCalorieAI"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="16dp"/>
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -107,7 +116,7 @@
                             android:id="@+id/tvDaysCount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="42"
+                            android:text="3"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold"/>
@@ -272,11 +281,11 @@
                     android:layout_marginBottom="12dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="🏆"
-                        android:textSize="18sp"
-                        android:layout_marginEnd="8dp"/>
+                        android:layout_width="30dp"
+                        android:layout_height="29dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/kubok"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -386,7 +395,7 @@
                                 android:id="@+id/tvPhotosCount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="100 фото"
+                                android:text="10 фото"
                                 android:textColor="#1A1A1A"
                                 android:textSize="13sp"
                                 android:textStyle="bold"
@@ -433,7 +442,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Настройки"
+                android:text="Дополнительные функции"
                 android:textColor="#1A1A1A"
                 android:textSize="17sp"
                 android:textStyle="bold"
@@ -469,11 +478,11 @@
                         android:focusable="true">
 
                         <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:text="⚙️"
+                            android:layout_width="39dp"
+                            android:layout_height="41dp"
                             android:gravity="center"
-                            android:textSize="16sp"/>
+                            android:background="@drawable/tsel"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -495,111 +504,9 @@
                     <View android:layout_width="match_parent" android:layout_height="1dp"
                         android:background="#F0F0F0" android:layout_marginStart="56dp"/>
 
-                    <!-- Notifications -->
-                    <LinearLayout
-                        android:id="@+id/btnNotifications"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true">
-
-                        <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:text="🔔"
-                            android:gravity="center"
-                            android:textSize="16sp"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Уведомления"
-                            android:textColor="#1A1A1A"
-                            android:textSize="15sp"
-                            android:layout_marginStart="12dp"/>
-
-                        <TextView
-                            android:id="@+id/tvNotificationBadge"
-                            android:layout_width="22dp"
-                            android:layout_height="22dp"
-                            android:gravity="center"
-                            android:text="3"
-                            android:textColor="#FFFFFF"
-                            android:textSize="11sp"
-                            android:textStyle="bold"
-                            android:background="@drawable/badge_red"
-                            android:layout_marginEnd="8dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="›"
-                            android:textColor="#BBBBBB"
-                            android:textSize="20sp"/>
-                    </LinearLayout>
-
                     <View android:layout_width="match_parent" android:layout_height="1dp"
                         android:background="#F0F0F0" android:layout_marginStart="56dp"/>
 
-                    <!-- Pro Subscription -->
-                    <LinearLayout
-                        android:id="@+id/btnProSubscription"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true">
-
-                        <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:text="⚡"
-                            android:gravity="center"
-                            android:textSize="16sp"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Подписка Pro"
-                            android:textColor="#1A1A1A"
-                            android:textSize="15sp"
-                            android:layout_marginStart="12dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="NEW"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold"
-                            android:background="@drawable/badge_green"
-                            android:paddingStart="6dp"
-                            android:paddingEnd="6dp"
-                            android:paddingTop="2dp"
-                            android:paddingBottom="2dp"
-                            android:layout_marginEnd="8dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="›"
-                            android:textColor="#BBBBBB"
-                            android:textSize="20sp"/>
-                    </LinearLayout>
-
-                    <View android:layout_width="match_parent" android:layout_height="1dp"
-                        android:background="#F0F0F0" android:layout_marginStart="56dp"/>
 
                     <!-- Privacy -->
                     <LinearLayout
@@ -615,9 +522,9 @@
                         android:focusable="true">
 
                         <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:text="🛡️"
+                            android:layout_width="40dp"
+                            android:layout_height="42dp"
+                            android:background="@drawable/confinedc"
                             android:gravity="center"
                             android:textSize="16sp"/>
 
@@ -655,9 +562,9 @@
                         android:focusable="true">
 
                         <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:text="❓"
+                            android:layout_width="39dp"
+                            android:layout_height="41dp"
+                            android:background="@drawable/helper"
                             android:gravity="center"
                             android:textSize="16sp"/>
 
@@ -665,7 +572,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Помощь и поддержка"
+                            android:text="Текстовый помощник"
                             android:textColor="#1A1A1A"
                             android:textSize="15sp"
                             android:layout_marginStart="12dp"/>
@@ -694,11 +601,13 @@
                         android:clickable="true"
                         android:focusable="true">
 
+
                         <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:text="⚙️"
-                            android:gravity="center"
+                            android:layout_width="48dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="-6dp"
+                            android:background="@drawable/krug"
+                            android:gravity="center|start"
                             android:textSize="16sp"/>
 
                         <TextView
@@ -732,7 +641,7 @@
         android:elevation="8dp">
 
         <LinearLayout
-            android:id="@+id/btnCamera"
+            android:id="@+id/btnCamera1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -743,9 +652,9 @@
             android:focusable="true">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="📷"
+                android:layout_width="33dp"
+                android:layout_height="29dp"
+                android:background="@drawable/cam1"
                 android:textSize="20sp"/>
 
             <TextView
@@ -753,7 +662,7 @@
                 android:layout_height="wrap_content"
                 android:text="Камера"
                 android:textColor="#AAAAAA"
-                android:textSize="11sp"/>
+                android:textSize="11sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -768,9 +677,9 @@
             android:focusable="true">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="📋"
+                android:layout_width="31dp"
+                android:layout_height="29dp"
+                android:background="@drawable/history"
                 android:textSize="20sp"/>
 
             <TextView
@@ -793,16 +702,16 @@
             android:focusable="true">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="👤"
+                android:layout_width="27dp"
+                android:layout_height="29dp"
+                android:background="@drawable/profile"
                 android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Профиль"
-                android:textColor="#2DBD8F"
+                android:textColor="#AAAAAA"
                 android:textSize="11sp"
                 android:textStyle="bold"/>
         </LinearLayout>

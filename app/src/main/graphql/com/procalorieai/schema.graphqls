@@ -1,0 +1,155 @@
+schema {
+  query: AppQuery
+  mutation: Mutation
+}
+
+scalar DateTime
+
+type UserGQL {
+    id: Int!
+    username: String!
+    email: String!
+    role: String!
+    createdAt: DateTime!
+    daysInApp: Int!
+    totalRecords: Int!
+}
+
+type NutritionGQL {
+    calories: Float!
+    protein: Float!
+    fat: Float!
+    carbs: Float!
+}
+
+type MealLogGQL {
+    id: Int!
+    name: String!
+    nutrition: NutritionGQL!
+    mealType: String!
+    source: String!
+    eatenAt: DateTime!
+    s3Key: String
+}
+
+type GoalGQL {
+    id: Int!
+    goalType: String!
+    targetKg: Float!
+    currentWeightKg: Float!
+    dailyCalories: Float!
+    progressPercent: Float!
+    totalCalorieDeficit: Float!
+    createdAt: DateTime!
+}
+
+type PreferencesGQL {
+    dietType: String!
+    mealsPerDay: Int!
+    waterGoalMl: Int!
+    notificationsEnabled: Boolean!
+}
+
+type PrivacySettingsGQL {
+    analyticsEnabled: Boolean!
+    crashReportsEnabled: Boolean!
+    personalizationEnabled: Boolean!
+}
+
+type AchievementsGQL {
+    streakDays: Int!
+    goalCreated: Boolean!
+    photosAdded: Int!
+    daysInApp: Int!
+    totalRecords: Int!
+}
+
+type UploadUrlGQL {
+    requestId: Int!
+    uploadUrl: String!
+    s3Key: String!
+    expiresIn: Int!
+}
+
+type AnalysisStatusGQL {
+    requestId: Int!
+    status: String!
+}
+
+type AuthPayload {
+    accessToken: String!
+    refreshToken: String!
+    tokenType: String!
+}
+
+type AppQuery {
+    me: UserGQL!
+    meals: [MealLogGQL!]!
+    todayStats: NutritionGQL!
+    weeklyAverage: Float!
+    goal: GoalGQL
+    preferences: PreferencesGQL!
+    privacySettings: PrivacySettingsGQL!
+    achievements: AchievementsGQL!
+}
+
+type Mutation {
+    addMealLog(input: AddMealLogInput!): MealLogGQL!
+    deleteMealLog(id: Int!): Boolean!
+    upsertGoal(input: GoalInput!): GoalGQL!
+    updatePreferences(input: PreferencesInput!): PreferencesGQL!
+    updatePrivacySettings(input: PrivacySettingsInput!): PrivacySettingsGQL!
+    requestPhotoUpload: UploadUrlGQL!
+    confirmPhotoUpload(requestId: Int!): AnalysisStatusGQL!
+    register(input: RegisterInput!): AuthPayload!
+    login(input: LoginInput!): AuthPayload!
+    refreshTokens(input: RefreshInput!): AuthPayload!
+    deleteAccount: Boolean!
+}
+
+input AddMealLogInput {
+    name: String!
+    mealType: String!
+    source: String!
+    eatenAt: DateTime!
+    calories: Int!
+    protein: Float!
+    carbs: Float!
+    fat: Float!
+    s3Key: String
+}
+
+input GoalInput {
+    goalType: String!
+    targetKg: Float!
+    currentWeightKg: Float!
+    dailyCalories: Int!
+}
+
+input PreferencesInput {
+    dietType: String!
+    mealsPerDay: Int!
+    waterGoalMl: Int!
+    notificationsEnabled: Boolean!
+}
+
+input PrivacySettingsInput {
+    analyticsEnabled: Boolean!
+    crashReportsEnabled: Boolean!
+    personalizationEnabled: Boolean!
+}
+
+input RegisterInput {
+    username: String!
+    email: String!
+    password: String!
+}
+
+input LoginInput {
+    email: String!
+    password: String!
+}
+
+input RefreshInput {
+    refreshToken: String!
+}

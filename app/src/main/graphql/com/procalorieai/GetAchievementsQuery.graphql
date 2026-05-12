@@ -1,0 +1,9 @@
+query GetAchievements {
+  achievements {
+    streakDays
+    goalCreated
+    photosAdded
+    daysInApp
+    totalRecords
+  }
+}

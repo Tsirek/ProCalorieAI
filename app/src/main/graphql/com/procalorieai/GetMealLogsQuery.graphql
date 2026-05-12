@@ -1,0 +1,16 @@
+query GetMealLogs {
+  meals {
+    id
+    name
+    mealType
+    source
+    eatenAt
+    s3Key
+    nutrition {
+      calories
+      protein
+      fat
+      carbs
+    }
+  }
+}

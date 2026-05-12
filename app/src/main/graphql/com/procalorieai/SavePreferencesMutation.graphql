@@ -1,0 +1,8 @@
+mutation SavePreferences($input: PreferencesInput!) {
+  updatePreferences(input: $input) {
+    dietType
+    mealsPerDay
+    waterGoalMl
+    notificationsEnabled
+  }
+}

@@ -1,6 +1,6 @@
-// build.gradle.kts (ROOT — в корне проекта)
 plugins {
     id("com.android.application") version "8.3.0" apply false
     id("com.android.library") version "8.3.0" apply false
     id("org.jetbrains.kotlin.android") version "1.9.22" apply false
+    id("com.apollographql.apollo3") version "3.8.2" apply false
 }
